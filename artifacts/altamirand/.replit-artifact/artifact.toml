@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Altamirand"
+version = "1.0.0"
+id = "artifacts/altamirand"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19770
+
+[services.development]
+run = "pnpm --filter @workspace/altamirand run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/altamirand", "run", "build" ]
+publicDir = "artifacts/altamirand/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19770"
+BASE_PATH = "/"
