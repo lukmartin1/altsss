@@ -225,12 +225,12 @@ export default function App() {
         {/* Social links — centered row */}
         <div className="w-full max-w-2xl px-8 md:px-16 mb-10">
           <div className="grid grid-cols-3 gap-4">
-            <a href="https://instagram.com/altamirand" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/1altamiranoo" target="_blank" rel="noopener noreferrer"
               className="flex flex-col items-center justify-center gap-3 bg-[#1a1712] py-8 border border-transparent hover:border-[#f0c96b]/40 transition-colors">
               <Instagram className="w-7 h-7 text-[#ffd97a]" />
               <span className="text-xs font-mono tracking-widest text-[#aaa]">INSTAGRAM</span>
             </a>
-            <a href="https://youtube.com/@altamirand" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.youtube.com/@Altamiranoo" target="_blank" rel="noopener noreferrer"
               className="flex flex-col items-center justify-center gap-3 bg-[#1a1712] py-8 border border-transparent hover:border-[#f0c96b]/40 transition-colors">
               <Youtube className="w-7 h-7 text-[#ffd97a]" />
               <span className="text-xs font-mono tracking-widest text-[#aaa]">YOUTUBE</span>
